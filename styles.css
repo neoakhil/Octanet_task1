@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    color: black;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    background: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.attractions, .culture, .food {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.attractions h2, .culture h2, .food h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.attraction-list, .culture-details, .cuisine-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.attraction, .detail, .cuisine {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.attraction img, .hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.detail, .cuisine {
+    cursor: pointer;
+}
+
+.info {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    z-index: 1;
+}
+
+.detail:hover .info, .cuisine:hover .info {
+    display: block;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .social-media {
+    margin: 20px 0;
+}
+
+footer .social-media a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+footer .newsletter input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+footer .newsletter button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: #ff6b6b;
+    color: #fff;
+    cursor: pointer;
+}
